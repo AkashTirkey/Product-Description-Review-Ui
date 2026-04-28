@@ -13,7 +13,7 @@ const Product = () =>{
     const[selectedSize, setSelectedSize] = useState(null);
     const[quantity, setQuantity] = useState(1);
 
-    const sizes = ["S" , "M", "L"];
+    const sizes = ["300g" , "500g", "1kg"];
 
    return (
     <div className={style.container}>
@@ -43,11 +43,50 @@ const Product = () =>{
       </div>
 
       {/* Right part */}
-      <div className={style.detailsSection}>
+       <div className={style.detailsSection}>
 
-          <h2 className={style.title}>
-          Chocolate Salvation Peanut Butter
-          </h2>
+        <h2 className={style.title}>Premium Cotton T-Shirt</h2>
+
+        <p className={style.price}>₹999</p>
+
+        <p className={style.sold}>1200 units sold</p>
+
+        {/* Sizes */}
+        <div className={style.sizeContainer}>
+          {sizes.map((size) => (
+            <span
+              key={size}
+              className={`${style.size} ${
+                selectedSize === size ? style.activeSize : ""
+              }`}
+              onClick={() => setSelectedSize(size)}
+            >
+              {size}
+            </span>
+          ))}
+        </div>
+
+        {/* Quantity */}
+        <div className={style.quantity}>
+          <button onClick={() => setQuantity(prev => Math.max(1, prev - 1))}>
+            -
+          </button>
+
+          <span>{quantity}</span>
+
+          <button onClick={() => setQuantity(prev => prev + 1)}>
+            +
+          </button>
+        </div>
+
+        {/* Button */}
+        <button
+          className={style.addToCart}
+          disabled={!selectedSize}
+        >
+          Add to Cart
+        </button>
+
       </div>
 
     </div>
