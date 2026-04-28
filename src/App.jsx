@@ -6,6 +6,7 @@ import ProductDetails from "./ProductDetails";
 import FAQ from "./FAQ";
 import Footer from "./Footer";
 import TopBanner from "./TopBanner";
+import ReviewSection from "./ReviewSection";
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
       <Product/>
       <ProductDetails/>
       <FAQ/>
+      <ReviewSection/>
       <Footer/>
     </div>
   );
