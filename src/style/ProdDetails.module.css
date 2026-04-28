@@ -1,0 +1,43 @@
+.Container {
+  max-width:1200px;
+  margin: 0 auto;
+    display: flex;
+  gap: 40px;
+  padding: 40px;
+}
+
+/* LEFT */
+.left {
+  flex: 2;
+}
+
+.section {
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 10px 0;
+}
+
+.content {
+  padding: 10px 0;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* RIGHT */
+.right {
+  flex: 1;
+  display: flex;
+  align-items: flex-start;
+}
+
+.image {
+  width: 100%;
+  border-radius: 10px;
+}

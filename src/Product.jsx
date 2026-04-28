@@ -9,7 +9,7 @@ const Product = () =>{
         "https://m.media-amazon.com/images/S/aplus-media/sc/832b7d50-f3f8-4526-bcc1-03f0d38475c5.__CR0,0,5000,5000_PT0_SX300_V1___.jpg",
         "https://m.media-amazon.com/images/I/71HZmD56V0S.jpg"
     ];
-    const[selectedImage, setSelectedImage] = useState([0]);
+    const[selectedImage, setSelectedImage] = useState(images[0]);
     const[selectedSize, setSelectedSize] = useState(null);
     const[quantity, setQuantity] = useState(1);
 
