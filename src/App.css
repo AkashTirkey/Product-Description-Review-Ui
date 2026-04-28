@@ -1,4 +1,32 @@
-*{
+* {
+  box-sizing: border-box;
+}
+
+body {
   margin: 0;
   padding: 0;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.container {
+  padding: 40px;
+}
+
+/* MOBILE BASE */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+
+  .container {
+    padding: 20px;
+  }
+
+  .app {
+    gap: 25px;
+  }
 }
