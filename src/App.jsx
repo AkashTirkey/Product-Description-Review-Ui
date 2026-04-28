@@ -5,10 +5,12 @@ import Product from "./Product";
 import ProductDetails from "./ProductDetails";
 import FAQ from "./FAQ";
 import Footer from "./Footer";
+import TopBanner from "./TopBanner";
 
 const App = () => {
   return (
     <div>
+      <TopBanner/>
       <Navbar/>
       <Product/>
       <ProductDetails/>

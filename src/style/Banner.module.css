@@ -1,0 +1,26 @@
+.banner {
+  background-color: #5a3e2b;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-size: 14px;
+
+  /* animation */
+  animation: slideDown 0.8s ease-out;
+}
+
+/* slide from top */
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.banner strong {
+  color: #ffd369;
+}
